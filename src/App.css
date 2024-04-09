@@ -1,38 +1,366 @@
-.App {
+/* Import Montserrat font with specific weights */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap");
+
+/* Landing Page CSS */
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat, Inter;
+  background-color: #fbfef5;
+  font-size: 16px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  background-color: #f6f8f2;
+  height: 88px;
+}
+
+.clearth {
+  margin: 20px;
+  font-weight: bold;
+  font-size: 48px;
+  font-family: "Montserrat", sans-serif;
+  width: 244px;
+  height: 31px;
+  letter-spacing: 4px;
+}
+
+.logo img {
+  width: 60px;
+  height: 60px; /* Added 'px' */
+  margin-left: 29px;
+  padding-top: 24px;
+}
+
+.menu button {
+  font-family: "Montserrat", sans-serif;
+  margin-left: 150px;
+  margin-right: 20px;
+  padding: 12px 25px;
+  font-size: 16px;
+  background-color: #00704b;
   color: white;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.2);
 }
 
-.App-link {
-  color: #61dafb;
+.menu a {
+  color: white;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+header {
+  background-color: #f8fbfa;
+  height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.isi p {
+  font-family: "Montserrat", sans-serif;
+}
+
+.isi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.isi > h1 {
+  font-size: 100px;
+  margin-bottom: 35px;
+  background: linear-gradient(210deg, rgb(102, 97, 97), #87ceeb, #87ae73);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px rgba(63, 63, 60, 0.1);
+}
+
+.earth {
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  margin: 20px 0;
+  z-index: 1;
+}
+
+.get-started-btn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: bold; /* Ensure 'bold' weight is available */
+  background-color: #00704b;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #cccccc;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+  .menu button {
+    margin-left: 10px;
+    margin-right: 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+  header {
+    padding: 10px;
   }
+
+  .logo img {
+    width: 60px;
+    height: auto;
+  }
+
+  .menu a {
+    color: white;
+    text-decoration: none;
+  }
+
+  header {
+    background-color: #f4f4f4;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .get-started-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* Adjusted font weight removed */
+  }
+}
+
+/* Login Page CSS */
+.card {
+  width: 648px;
+  height: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f6f8f2;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.card1 {
+  width: 648px;
+  height: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f6f8f2;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form-group {
+  display: flex;
+  margin: 15px;
+  width: 354px;
+  height: 35px;
+  margin-bottom: 10px;
+  border: 1px;
+  border-radius: 5px;
+  border-color: black;
+  background-color: #cccccc;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.form-group input::placeholder {
+  color: #cccccc; /* Warna teks placeholder */
+  font-style: italic; /* Gaya font */
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+a {
+  color: blue;
+}
+
+button {
+  padding: 10px 20px;
+  width: 309px;
+  height: 59px;
+  font-size: 16px;
+  background-color: #00704b;
+  color: white;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.garbage {
+  width: 210px;
+  height: 210px;
+}
+
+.searchbar {
+  display: flex;
+  background-color: #acb5ca;
+  width: 260px;
+  height: 42px;
+  margin: auto;
+  border: 0px;
+  border-radius: 35px;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 10px;
+}
+
+.searchbar text {
+  padding-left: 29px;
+}
+
+.searchbar img {
+  justify-content: right;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  height: 88px;
+}
+
+.contentWrapper-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.customwrapper {
+  padding: 10.5px;
+}
+
+.contentWrapper img {
+  padding-left: 8px;
+}
+
+.card {
+  background-color: #ffffff;
+  width: 167px;
+  height: 195px;
+  border: 1px solid black;
+  border-radius: 21px;
+  border-color: black;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 0px;
+}
+
+.top-grid {
+  display: flex;
+  flex: 1;
+  height: 97px;
+  border-top-right-radius: 21px;
+  border-top-left-radius: 21px;
+}
+
+.imagesampah {
+  width: auto;
+  height: 97px;
+}
+
+.bottom-grid {
+  height: auto;
+  background-color: #ffffff;
+  border-bottom-right-radius: 21px;
+  border-bottom-left-radius: 21px;
+}
+
+.card-wrapper {
+  display: flex;
+  padding-left: 7px;
+  padding-top: 10px;
+  flex-direction: column;
+}
+
+.title-style {
+  font-weight: bold;
+}
+
+.tanggal-style {
+  font-size: 6px;
+  font-weight: lighter;
+}
+
+.desk-style {
+  padding-top: 10px;
+  font-size: 9px;
+}
+
+.backbtn {
+  flex: 1;
+  width: 20px;
+  height: 20px;
+}
+
+.button-container {
+  background-color: #08744c;
+  border-radius: 20% 20% 0 0 / 100% 100% 0 0;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  max-width: 480px;
+  height: 60px;
+}
+.button-container img {
+  width: 50px;
+  height: 50px;
+  margin: 0 16px;
 }
