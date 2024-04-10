@@ -4,7 +4,7 @@ import card from "./cardimage.png";
 
 function Card() {
   return (
-    <div className="card">
+    <div className="card7">
       <div className="card-grid">
         <div className="top-grid">
           <div className="imagesampah">
