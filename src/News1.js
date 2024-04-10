@@ -48,7 +48,7 @@ function News1() {
           <button className="buttontiga" onClick={() => navigate("/homepage")}>
             <img src={SideBarButton1} alt="Button 1" />
           </button>
-          <button className="buttontiga">
+          <button className="buttontiga" onClick={()=>navigate("/fitursampah")}>
             <img src={SideBarButton2} alt="Button 2" />
           </button>
           <button className="buttontiga" onClick={() => navigate("/profile")}>

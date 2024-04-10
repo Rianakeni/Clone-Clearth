@@ -7,7 +7,28 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
+.container {
+  background-color: #b0b4cc;
+  max-width: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+}
 
+.App {
+  background-color: white;
+  text-align: center;
+  max-width: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
 body {
   font-family: Montserrat, Inter;
   background-color: #fbfef5;
@@ -37,6 +58,36 @@ body {
   height: 31px;
   letter-spacing: 4px;
 }
+.tempat{
+  margin-top: 50px;
+  margin-left: 30px;
+  margin-bottom: -60px;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: "interr", sans-serif;
+  width: 244px;
+  height: 31px;
+}
+.tempat2{
+  margin-top: -400px;
+  margin-left: 20px;
+  margin-bottom: -60px;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: "interr", sans-serif;
+  width: 244px;
+  height: 31px;
+}
+.tempattext{
+  margin-top: 10px;
+  margin-left:-325px;
+  font-size: 12px;
+  font-family: "interr", sans-serif;
+  width: 244px;
+  height: 31px;
+  text-align: left;
+}
+
 
 .logo2 img {
   width: 60px;
@@ -87,6 +138,7 @@ header {
   font-size: 100px;
   margin-bottom: 35px;
   background: linear-gradient(210deg, rgb(102, 97, 97), #87ceeb, #87ae73);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 1px 1px rgba(63, 63, 60, 0.1);
@@ -408,7 +460,7 @@ button {
   align-items: center;
 }
 
-//* Main container */
+/* Main container */
 .profile-container {
   background-color: #f5f5f5;
   width: 390px;
@@ -480,4 +532,60 @@ button {
   background: none;
   width: auto;
   height: auto;
+}
+.logo-container {
+  padding: 16px;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+.logo-container img {
+  width: 50px;
+  height: 50px;
+}
+.feature-button {
+  background-color: white;
+  border: 1px solid #8c8cb4;
+  border-radius: 5px;
+  height: 50px;
+  width: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 8px 4px 0;
+  margin-top: 50px;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.feature-button:last-child {
+  margin-bottom: 0;
+}
+
+.feature-button img {
+  width: 150px;
+  height: 100px;
+}
+
+.feature-button:not(:last-child) {
+  margin-bottom: -25px;
+}
+.transparent-container {
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 3px solid #ccc; 
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  width: 480px;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+}
+.imagefeat{
+  width: 300px;
+  height: 200px;
+  margin-left: -250px;
+  margin-top: -180px;
+  margin-bottom: -40px;
 }
