@@ -1,13 +1,13 @@
 import React from "react";
-import logo from "./components/assets/Logo CleanEarth.svg";
-import backbutton from "./backbuttonClearth.svg";
-import imagecard from "./components/assets/news1.svg";
+import logo from "../components/assets/Logo CleanEarth.svg";
+import backbutton from "../backbuttonClearth.svg";
+import imagecard from "../components/assets/news1.svg";
 import { useNavigate } from "react-router-dom";
-import SideBarButton1 from "./sidebar1.png";
-import SideBarButton2 from "./sidebar2.png";
-import SideBarButton3 from "./sidebar3.png";
+import SideBarButton1 from "../sidebar1.png";
+import SideBarButton2 from "../sidebar2.png";
+import SideBarButton3 from "../sidebar3.png";
 
-function News1() {
+function News2() {
   const navigate = useNavigate();
   return (
     <div>
@@ -48,7 +48,10 @@ function News1() {
           <button className="buttontiga" onClick={() => navigate("/homepage")}>
             <img src={SideBarButton1} alt="Button 1" />
           </button>
-          <button className="buttontiga" onClick={()=>navigate("/fitursampah")}>
+          <button
+            className="buttontiga"
+            onClick={() => navigate("/fitursampah")}
+          >
             <img src={SideBarButton2} alt="Button 2" />
           </button>
           <button className="buttontiga" onClick={() => navigate("/profile")}>
@@ -60,4 +63,4 @@ function News1() {
   );
 }
 
-export default News1;
+export default News2;
