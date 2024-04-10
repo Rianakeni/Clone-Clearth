@@ -5,8 +5,10 @@ import search from "./searchicon.png";
 function SearchBar() {
   return (
     <div className="searchbar">
-      <text>SEARCH</text>
-      <img src={search} alt="search" />
+      <input type="text" placeholder="SEARCH" />
+      <button type="submit" className="buttonsearch">
+        <img src={search} alt="Search" />
+      </button>
     </div>
   );
 }
