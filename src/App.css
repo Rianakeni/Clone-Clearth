@@ -7,7 +7,28 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
+.container {
+  background-color: #b0b4cc;
+  max-width: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+}
 
+.App {
+  background-color: white;
+  text-align: center;
+  max-width: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
 body {
   font-family: Montserrat, Inter;
   background-color: #fbfef5;
@@ -23,6 +44,11 @@ body {
   height: 88px;
 }
 
+.navbarkhusus {
+  display: flex;
+  justify-content: left;
+}
+
 .clearth {
   margin: 20px;
   font-weight: bold;
@@ -32,12 +58,42 @@ body {
   height: 31px;
   letter-spacing: 4px;
 }
+.tempat{
+  margin-top: 50px;
+  margin-left: 30px;
+  margin-bottom: -60px;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: "interr", sans-serif;
+  width: 244px;
+  height: 31px;
+}
+.tempat2{
+  margin-top: -350px;
+  margin-left: 20px;
+  margin-bottom: -60px;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: "interr", sans-serif;
+  width: 244px;
+  height: 31px;
+}
+.tempattext{
+  margin-top: 10px;
+  margin-left:-290px;
+  font-size: 12px;
+  font-family: "interr", sans-serif;
+  width: 244px;
+  height: 31px;
+  text-align: left;
+}
 
-.logo img {
+
+.logo2 img {
   width: 60px;
-  height: 60px; /* Added 'px' */
-  margin-left: 29px;
+  height: 60px;
   padding-top: 24px;
+  padding-left: 20px;
 }
 
 .menu button {
@@ -82,6 +138,7 @@ text-align: center;
   font-size: 100px;
   margin-bottom: 35px;
   background: linear-gradient(210deg, rgb(102, 97, 97), #87ceeb, #87ae73);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 1px 1px rgba(63, 63, 60, 0.1);
@@ -125,7 +182,7 @@ a {
   }
 
   .logo img {
-    width: 60px;
+    width: 70px;
     height: auto;
   }
 
@@ -230,6 +287,12 @@ button {
   cursor: pointer;
 }
 
+.button img {
+  display: flex;
+  width: 10px;
+  height: 10px;
+}
+
 .garbage {
   width: 210px;
   height: 210px;
@@ -241,7 +304,7 @@ button {
   width: 260px;
   height: 42px;
   margin: auto;
-  border: 0px;
+  border: none;
   border-radius: 35px;
   justify-content: space-between;
   align-items: center;
@@ -250,8 +313,24 @@ button {
   font-size: 10px;
 }
 
-.searchbar text {
-  padding-left: 29px;
+.searchbar input {
+  border: none;
+  background: none;
+  flex: 1;
+  font-size: inherit;
+}
+
+.buttonsearch {
+  border: none;
+  background: none;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchbar input::placeholder {
+  color: #acb5ca(0, 0, 0, 0.5);
 }
 
 .searchbar img {
@@ -260,8 +339,14 @@ button {
   padding-right: 20px;
 }
 
+.scroll {
+  height: 100vh;
+  overflow-y: auto;
+}
+
 .contentWrapper {
   display: flex;
+  flex: 1;
   flex-direction: row;
   background-color: #ffffff;
   justify-content: center;
@@ -274,6 +359,7 @@ button {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .customwrapper {
@@ -287,7 +373,7 @@ button {
 .card7 {
   background-color: #ffffff;
   width: 167px;
-  height: 195px;
+  height: auto;
   border: 1px solid black;
   border-radius: 21px;
   border-color: black;
@@ -308,7 +394,7 @@ button {
 }
 
 .imagesampah {
-  width: auto;
+  width: 167px;
   height: 97px;
 }
 
@@ -328,16 +414,19 @@ button {
 
 .title-style {
   font-weight: bold;
+  color: black;
 }
 
 .tanggal-style {
   font-size: 6px;
+  color: black;
   font-weight: lighter;
 }
 
 .desk-style {
   padding-top: 10px;
   font-size: 9px;
+  color: black;
 }
 
 .backbtn {
@@ -357,10 +446,146 @@ button {
   position: fixed;
   bottom: 0;
   max-width: 480px;
-  height: 60px;
+  height: 40px;
 }
-.button-container img {
+
+.buttontiga {
+  width: 400px;
+  height: 40px;
+  border: none;
+  background: none;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main container */
+.profile-container {
+  background-color: #f5f5f5;
+  width: 390px;
+  margin: 0 auto; /* Center horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center vertically */
+  padding: 20px; /* Add some padding for spacing */
+  border: 3px solid green;
+  border-radius: 10px;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+/* Background image */
+.background {
+  position: relative;
+}
+
+.background img {
+  width: 600px;
+  height: 200px;
+  border-radius: 10px;
+  margin: 30px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-field {
+  margin-bottom: 10px;
+}
+
+.info-field label {
+  font-weight: bold;
+  font-size: 12px;
+  display: flex;
+  justify-content: left;
+}
+
+.info-field input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.containerprofile {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttoncard {
+  border: none;
+  background: none;
+  width: auto;
+  height: auto;
+}
+.logo-container {
+  padding: 16px;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+.logo-container img {
   width: 50px;
   height: 50px;
-  margin: 0 16px;
+}
+.feature-button {
+  background-color: white;
+  border: 1px solid #8c8cb4;
+  border-radius: 5px;
+  height: 50px;
+  width: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 8px 4px 0;
+  margin-top: 50px;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.feature-button:last-child {
+  margin-bottom: 0;
+}
+
+.feature-button img {
+  width: 150px;
+  height: 100px;
+}
+
+.feature-button:not(:last-child) {
+  margin-bottom: -25px;
+}
+.transparent-container {
+  margin-top: 25px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 3px solid #ccc; 
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  width: 480px;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+}
+.imagefeat{
+  width: 300px;
+  height: 200px;
+  margin-left: -250px;
+  margin-top: -100px;
+  margin-bottom: -40px;
 }
