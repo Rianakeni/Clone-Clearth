@@ -5,6 +5,16 @@ import garbage from "./components/garbage.svg";
 import { useNavigate } from "react-router-dom";
 
 function Login() {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    if (username === 'admin' && password === 'admin') {
+      navigate('/homepage');
+    } else {
+      alert('Invalid username or password');
+    }
+  };
   const navigate = useNavigate();
   return (
     <div className="card1">
@@ -39,7 +49,7 @@ function Login() {
       <p>
         Don't have an account? <a href="/register">Sign up</a>
       </p>
-      <button onClick={() => navigate("/homepage")}>LOG IN</button>
+      <button onClick={handleSubmit}>LOG IN</button>
     </div>
   );
 }
