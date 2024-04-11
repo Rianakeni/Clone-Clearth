@@ -8,7 +8,8 @@ html {
   box-sizing: border-box;
 }
 .container {
-  background-color: #b0b4cc;
+  background: none;
+  border: 1px;
   max-width: 480px;
   margin: 0 auto;
   display: flex;
@@ -19,7 +20,7 @@ html {
 }
 
 .App {
-  background-color: white;
+  background-color: none;
   text-align: center;
   max-width: 480px;
   margin: 0 auto;
@@ -40,7 +41,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f6f8f2;
+  background-color: none;
   height: 88px;
 }
 
@@ -50,7 +51,6 @@ body {
 }
 
 .clearth {
-  margin: 20px;
   font-weight: bold;
   font-size: 48px;
   font-family: "Montserrat", sans-serif;
@@ -58,7 +58,7 @@ body {
   height: 31px;
   letter-spacing: 4px;
 }
-.tempat{
+.tempat {
   margin-top: 50px;
   margin-left: 30px;
   margin-bottom: -60px;
@@ -68,7 +68,7 @@ body {
   width: 244px;
   height: 31px;
 }
-.tempat2{
+.tempat2 {
   box-sizing: border-box;
   white-space: nowrap;
   margin-top: -350px;
@@ -81,10 +81,10 @@ body {
   width: 244px;
   height: 31px;
 }
-.tempattext{
+.tempattext {
   box-sizing: border-box;
   margin-top: 40px;
-  margin-left:-100px;
+  margin-left: -100px;
   margin-bottom: -20px;
   font-size: 12px;
   font-family: "interr", sans-serif;
@@ -92,7 +92,6 @@ body {
   height: 31px;
   text-align: left;
 }
-
 
 .logo2 img {
   width: 60px;
@@ -126,7 +125,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-text-align: center;
+  text-align: center;
 }
 
 .isi p {
@@ -164,7 +163,7 @@ text-align: center;
   background-color: #00704b;
   padding: 10px 20px;
   color: white;
-border: none;
+  border: none;
   border-radius: 5px;
   margin: 20px;
   cursor: pointer;
@@ -347,13 +346,14 @@ button {
 .scroll {
   height: 100vh;
   overflow-y: auto;
+  background: linear-gradient(to right, #ffffff, #d5fcd1);
 }
 
 .contentWrapper {
   display: flex;
   flex: 1;
   flex-direction: row;
-  background-color: #ffffff;
+  background-color: none;
   justify-content: center;
   align-items: center;
   height: 88px;
@@ -383,7 +383,7 @@ button {
   border-radius: 21px;
   border-color: black;
 }
-  
+
 .card-grid {
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -482,13 +482,13 @@ button {
 .logo {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .logo img {
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
+  width: 60px;
+  height: 60px;
 }
 
 /* Background image */
@@ -578,16 +578,16 @@ button {
 .transparent-container {
   margin-top: 25px;
   background-color: rgba(255, 255, 255, 0.8);
-  border: 3px solid #ccc; 
+  border: 3px solid #ccc;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 70%;
   width: 480px;
-  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
 }
-.imagefeat{
+.imagefeat {
   width: 300px;
   height: 150px;
   margin-left: -250px;
@@ -595,7 +595,7 @@ button {
   margin-bottom: -50px;
   box-sizing: border-box;
 }
-.imagemaps{
+.imagemaps {
   box-sizing: border-box;
   width: 200px;
   height: 100px;

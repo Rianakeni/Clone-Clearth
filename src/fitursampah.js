@@ -12,11 +12,13 @@ function Fitursampah() {
   return (
     <div className="scroll">
       <div className="container App">
-        <div className="logo-container">
-          <img src={logo} alt="" />
+        <div className="navbar">
+          <div className="logo">
+            <img src={logo} alt="Logo" />
+          </div>
+          <h1 className="clearth">LEARTH</h1>
         </div>
         <div>
-          <h2 className="clearth">LEARTH</h2>
           <h2 className="tempat">TEMPAT SAMPAH TERDEKAT</h2>
         </div>
         <div className="feature-container">

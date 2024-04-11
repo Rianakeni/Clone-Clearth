@@ -11,7 +11,7 @@ function Landingpage() {
         <div className="logo">
           <img src={logo} alt="Logo" />
         </div>
-        <h2 className="clearth">LEARTH</h2>
+        <h1 className="clearth">LEARTH</h1>
         <div className="menu">
           <nav>
             <button onClick={() => navigate("/login")}>LOGIN</button>

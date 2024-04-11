@@ -8,8 +8,10 @@ function Register() {
   return (
     <div className="card">
       <div className="navbar">
-        <img src={logo} alt="clearth" className="logo" />
-        <h1 className="learth">LEARTH</h1>
+        <div className="logo">
+          <img src={logo} alt="Logo" />
+        </div>
+        <h1 className="clearth">LEARTH</h1>
       </div>
 
       <h3>CREATE AN ACCOUNT</h3>

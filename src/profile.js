@@ -11,14 +11,16 @@ import { useNavigate } from "react-router-dom";
 function Profile() {
   const navigate = useNavigate();
   return (
-    <div className="profile-container">
+    <div className="scroll">
       <div className="navbar">
-        <img src={logo} alt="clearth" className="logo" />
-        <h1 className="learth">LEARTH</h1>
+        <div className="logo">
+          <img src={logo} alt="Logo" />
+        </div>
+        <h1 className="clearth">LEARTH</h1>
       </div>
       <div className="background">
         <div className="center">
-          <img src={profile} alt="User Profile Picture" />
+          <img src={profile} alt="Userphoto" />
         </div>
       </div>
       <div className="user-info">
@@ -62,7 +64,10 @@ function Profile() {
           <button className="buttontiga" onClick={() => navigate("/homepage")}>
             <img src={SideBarButton1} alt="Button 1" />
           </button>
-          <button className="buttontiga" onClick={() => navigate("/fitursampah")}>
+          <button
+            className="buttontiga"
+            onClick={() => navigate("/fitursampah")}
+          >
             <img src={SideBarButton2} alt="Button 2" />
           </button>
           <button className="buttontiga">

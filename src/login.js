@@ -7,12 +7,12 @@ import { useNavigate } from "react-router-dom";
 function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
-    if (username === 'admin' && password === 'admin') {
-      navigate('/homepage');
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+    if (username === "admin" && password === "admin") {
+      navigate("/homepage");
     } else {
-      alert('Invalid username or password');
+      alert("Invalid username or password");
     }
   };
   const navigate = useNavigate();
@@ -20,7 +20,7 @@ function Login() {
     <div className="card1">
       <div className="navbar">
         <img src={logo} alt="clearth" className="logo" />
-        <h1 className="learth">LEARTH</h1>
+        <h1 className="clearth">LEARTH</h1>
       </div>
       <div>
         <img src={garbage} alt="garbage" className="garbage" />
