@@ -7,6 +7,7 @@ import SideBarButton3 from '../sidebar3.png';
 import sampah from '../components/assets/sampah1.png';
 import { useNavigate } from "react-router-dom";
 import data from "../components/data.json";
+import maps from "../components/assets/maps.png"
 
 function Fitur1(){
     const navigate = useNavigate();
@@ -25,6 +26,9 @@ function Fitur1(){
                         <img src={sampah} className='imagefeat' alt="image feat" />
                         <h3 className='tempattext'><strong>Alamat:</strong>{data.tempatSampahA.alamat}</h3>
                         <h3 className='tempattext'><strong>Deskripsi:</strong>{data.tempatSampahA.deskripsi}</h3>
+                        <button className="buttontiga" onClick={()=>navigate("/maps")}>
+                          <img src={maps} className="imagemaps" alt="imagemapss" />
+                        </button>
                     </div>
                 </div>
             </div>
